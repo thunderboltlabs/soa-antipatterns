@@ -1,0 +1,70 @@
+!!!
+
+%head
+  %meta{:charset => "utf-8"}
+  %link{:rel => "stylesheet", :href => "css/reset.css"}
+  %link{:rel => "stylesheet", :href => "css/main.css"}
+  %link{:rel => "stylesheet", :href => "css/zenburn.css"}
+
+%body
+  #reveal
+    .state-background
+    .slides
+
+
+
+
+      %section
+        %h2 SOA Antipatterns
+        %h4 Rantings by Tammer and Randall
+        %h5 (Thunderbolt Labs)
+      %section
+        Slide 2
+
+
+
+
+
+    %aside.controls
+      %a.left{:href => "#"}left
+      %a.right{:href => "#"}right
+      %a.up{:href => "#"}up
+      %a.down{:href => "#"}down
+    .progress
+      %span
+  %script{:src => "js/reveal.js"}
+  %script{:src => "js/highlight.js"}
+  %script{:src => "js/classList.js"}
+
+  :javascript
+    // Parse the query string into a key/value object
+    var query = {};
+    location.search.replace( /[A-Z0-9]+?=(\w*)/gi, function(a) {
+      query[ a.split( '=' ).shift() ] = a.split( '=' ).pop();
+    } );
+
+    Reveal.initialize({
+      // Display controls in the bottom right corner
+      controls: false,
+
+      // Display a presentation progress bar
+      progress: true,
+
+      // If true; each slide will be pushed to the browser history
+      history: true,
+
+      // Flags if mouse wheel navigation should be enabled
+      mouseWheel: true,
+
+      // Apply a 3D roll to links on hover
+      rollingLinks: false,
+
+      // UI style
+      theme: query.theme || 'neon', // default/neon
+
+      // Transition style
+      transition: query.transition || 'linear' // default/cube/page/concave/linear(2d)
+    });
+
+    hljs.initHighlightingOnLoad();
+

@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<head>
+  <meta charset='utf-8' />
+  <link href='css/reset.css' rel='stylesheet' />
+  <link href='css/main.css' rel='stylesheet' />
+  <link href='css/zenburn.css' rel='stylesheet' />
+</head>
+<body>
+  <div id='reveal'>
+    <div class='state-background'></div>
+    <div class='slides'>
+      <section>
+        <h2>SOA Antipatterns</h2>
+        <h4>Rantings by Tammer and Randall</h4>
+        <h5>(Thunderbolt Labs)</h5>
+      </section>
+      <section>
+        Slide 2
+      </section>
+    </div>
+    <aside class='controls'>
+      <a class='left' href='#'>left</a>
+      <a class='right' href='#'>right</a>
+      <a class='up' href='#'>up</a>
+      <a class='down' href='#'>down</a>
+    </aside>
+    <div class='progress'>
+      <span></span>
+    </div>
+  </div>
+  <script src='js/reveal.js'></script>
+  <script src='js/highlight.js'></script>
+  <script src='js/classList.js'></script>
+  <script type='text/javascript'>
+    //<![CDATA[
+      // Parse the query string into a key/value object
+      var query = {};
+      location.search.replace( /[A-Z0-9]+?=(\w*)/gi, function(a) {
+        query[ a.split( '=' ).shift() ] = a.split( '=' ).pop();
+      } );
+      
+      Reveal.initialize({
+        // Display controls in the bottom right corner
+        controls: false,
+      
+        // Display a presentation progress bar
+        progress: true,
+      
+        // If true; each slide will be pushed to the browser history
+        history: true,
+      
+        // Flags if mouse wheel navigation should be enabled
+        mouseWheel: true,
+      
+        // Apply a 3D roll to links on hover
+        rollingLinks: false,
+      
+        // UI style
+        theme: query.theme || 'neon', // default/neon
+      
+        // Transition style
+        transition: query.transition || 'linear' // default/cube/page/concave/linear(2d)
+      });
+      
+      hljs.initHighlightingOnLoad();
+    //]]>
+  </script>
+</body>
