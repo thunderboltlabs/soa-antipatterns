@@ -5,6 +5,8 @@
   %link{:rel => "stylesheet", :href => "css/reset.css"}
   %link{:rel => "stylesheet", :href => "css/main.css"}
   %link{:rel => "stylesheet", :href => "css/zenburn.css"}
+  :javascript
+    document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
 
 %body
   #reveal
@@ -15,11 +17,51 @@
 
 
       %section
-        %h2 SOA Antipatterns
-        %h4 Rantings by Tammer and Randall
-        %h5 (Thunderbolt Labs)
+        %h1 SOA Antipatterns
+        %h5 Rantings by...
+        %h3 Tammer Saleh and Randall Thomas
+        %h4 (Thunderbolt Labs)
       %section
-        Slide 2
+        %h2 Who are we?
+      %section
+        %h2 Randall Thomas
+        %ul
+          %li Data and Analytics Geek
+          %li Intoxicated developers worldwide at Engine Yard
+          %li Whisk(e)y lover
+      %section
+        %h2 Tammer Saleh
+        %ul
+          %li Detected Earthquakes in Southern California
+          %li Wrote Hoptoad and Shoulda at Thoughtbot
+          %li VP Engineering at Engine Yard
+      %section{:data => {:state => "logo"}}
+        %h1 Thunderbolt Labs
+
+      %section
+        %h2 Modern SOAs
+      %section
+        %h2 Writing Internal APIs
+      %section
+        %h2 Centralized DB
+      %section
+        %h2 Consuming Internal APIs
+      %section
+        %h2 Consuming External APIs
+      %section
+        %h3 James Golic
+        TODO: Image
+      %section
+        %h3 Rollout
+        https://github.com/jamesgolick/rollout
+      %section
+        %h3 Degrade
+        https://github.com/jamesgolick/degrade
+      %section
+        %h2 Testing
+      %section
+        %h3 No End-to-End Integration Tests
+        
 
 
 
